@@ -2,13 +2,17 @@ package models;
 
 
 import jakarta.persistence.*;
-import lombok.AccessLevel;
+import lombok.*;
 import lombok.experimental.FieldDefaults;
 
 import java.util.HashSet;
 import java.util.Set;
 
 @Entity
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 @Table(name = "Users")
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class UserEntity {
